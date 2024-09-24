@@ -134,7 +134,7 @@ body {
     max-width: 300px !important;
 }
 .message {
-    display: block;
+    display: none;
     font-family: var(--font-four);
     text-transform: uppercase;
     font-weight: 600;
