@@ -1,0 +1,296 @@
+/* RETHINK SANS */
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-500.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-500italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-600.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-600italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-700.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-700italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-800.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Rethink Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/rethink-sans-v5-latin_latin-ext-800italic.woff2') format('woff2'); 
+}
+/* BARLOW CONDENSED */
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-100.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-100italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-200.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-200italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-300.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-300italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-500.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-500italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-600.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-600italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-700.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-700italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-800.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-800italic.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-900.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow Condensed';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/barlow-condensed-v12-latin_latin-ext-900italic.woff2') format('woff2'); 
+}
+/* LIBERAL */
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Liberal-Thin.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/Liberal-ExtraLight.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Liberal-Light.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Liberal-Regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Liberal-SemiBold.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Liberal-Bold.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Liberal';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Liberal-ExtraBold.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Liberal';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Liberal-Black.woff2') format('woff2'); 
+}
+/* D-DIN */
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN.woff2') format('woff2'),
+    url('../fonts/D-DIN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN-Italic.woff2') format('woff2'),
+    url('../fonts/D-DIN-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN-Bold.woff2') format('woff2'),
+    url('../fonts/D-DIN-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DINCondensed.woff2') format('woff2'),
+    url('../fonts/D-DINCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+    url('../fonts/D-DINCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+}
