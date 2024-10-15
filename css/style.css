@@ -79,17 +79,21 @@ body {
     background-size: cover;
     cursor: default;
 }
-body:has(*[id*='-show']:target) #bg {
+#bg {
+    opacity: 0.7;
     -webkit-filter: grayscale(1.0);
     filter: grayscale(1.0);
-    transition: 0.3s filter ease-in-out;
-    transition: 0.3s -webkit-filter ease-in-out;
+    transition-property: filter, -webkit-filter, opacity;
+    transition-duration: 1.7s;
+    transition-timing-function:ease-in-out;
 }
-#bg {
+body:has(*[id*='-show']:target) #bg {
+    opacity: 1.0;
     -webkit-filter: grayscale(0.0);
     filter: grayscale(0.0);
-    transition: 1.3s filter ease-in-out;
-    transition: 1.3s -webkit-filter ease-in-out;
+    transition-property: filter, -webkit-filter, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 #bd {
     content: "";
