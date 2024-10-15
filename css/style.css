@@ -79,20 +79,20 @@ body {
     background-size: cover;
     cursor: default;
 }
-#bg {
+body:has(*[id*='-show']:target)#bg {
     opacity: 0.7;
     -webkit-filter: grayscale(1.0);
     filter: grayscale(1.0);
     transition-property: filter, -webkit-filter, opacity;
-    transition-duration: 1.7s;
+    transition-duration: 0.3s;
     transition-timing-function:ease-in-out;
 }
-body:has(*[id*='-show']:target) #bg {
+ #bg {
     opacity: 1.0;
     -webkit-filter: grayscale(0.0);
     filter: grayscale(0.0);
     transition-property: filter, -webkit-filter, opacity;
-    transition-duration: 0.3s;
+    transition-duration: 1.7s;
     transition-timing-function: ease-in-out;
 }
 #bd {
