@@ -493,6 +493,10 @@ li:before {
 and (orientation: portrait)
 and */ (max-width: 500px) /*
 and (-webkit-min-device-pixel-ratio: 2) */ {
+    .centerblock {
+        margin-top: -2.0rem; /* visually correct for .message  on mobile */
+        transition: 0.2s all ease-in-out;
+    }
     .show-text {
         font-size: 1.2rem;
         transition: 0.2s all ease-in-out;
