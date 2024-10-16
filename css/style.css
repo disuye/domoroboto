@@ -115,7 +115,7 @@ body:has(*[id*='-show']:target) #bg {
     z-index: 9998;
     text-align: center;
 }
-.header a {
+#menu a {
     display: inline-block;
     text-decoration: none; 
     padding: 0.5rem 0.9em 0.5rem 0.9em;
@@ -128,11 +128,20 @@ body:has(*[id*='-show']:target) #bg {
     text-transform: uppercase;
     transition: 0.3s all ease-in-out;
 }
-.header a:hover {
+#menu a:hover {
     padding: 0.5rem 0.9em 0.5rem 0.9em;
     background-color: rgba(0, 0, 0, 0.12);
     color: var(--highlight);
     transition: 0.15s all ease-in-out;
+}
+#hamburger {
+    display: block;
+    visibility: hidden;
+    opacity: 0.0;
+}
+#menu .close {
+    visibility: hidden;
+    background-color: transparent;
 }
 .centerblock {
     display: block; 
@@ -404,13 +413,11 @@ s {
     color: var(--secondary);
     text-decoration: none;
     padding: 0.4rem;
-    background: rgba(0, 0, 0, 0.25);
 }
 .close::after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20px' viewBox='0 -960 960 960' width='20px' fill='%23FFFFFF'%3E%3Cpath d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'/%3E%3C/svg%3E");
 }
 .close:hover {
-    background: rgba(0, 0, 0, 0.12);
 }
 h3, h1 {
     font-family: var(--font-one);
@@ -509,6 +516,40 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     h1 {
         font-size: 3.0rem;
         left: -0.8rem;
+    }
+    /* MOBILE NAVIGATION */
+    .header {
+        width: 100vw;
+    }
+    #menu a {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    #hamburger {
+        display: block;
+        visibility: visible;
+        opacity: 1.0;
+    }
+    #menu {
+        display: block;
+        position: fixed;
+        top: -15.5rem;
+        right: 0;
+        width: 100vw;
+        transition: 0.3s all ease-in-out;
+    }
+    #menu:target {
+        top: 0rem;
+    }
+    #menu:target #hamburger {
+        visibility: hidden;
+        opacity: 0.0;
+    }
+    #menu .close {
+        visibility: visible;
+    }
+    *[id*='-show'] .close {
+        visibility: hidden;
     } 
 }
 @media (min-width: 1600px) 
