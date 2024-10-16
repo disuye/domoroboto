@@ -46,7 +46,7 @@ body {
     background-color: var(--primary);
     text-align: center; 
     font-size: 12px !important;
-    line-height: calc(1.2rem 0.5vw);
+    line-height: 1.0rem;
     text-rendering: geometricPrecision;
     overflow-x: hidden;
     zoom: 100%;
@@ -110,12 +110,13 @@ body:has(*[id*='-show']:target) #bg {
     width: calc(100vw - 1.0rem);
     position: fixed;
     top: 0;
-    padding: 0rem;
+    padding: 0;
     margin: 0;
     z-index: 9998;
     text-align: center;
 }
-#menu a {
+#menu a, 
+#menu a:active {
     display: inline-block;
     text-decoration: none; 
     padding: 0.5rem 0.9em 0.5rem 0.9em;
@@ -134,14 +135,10 @@ body:has(*[id*='-show']:target) #bg {
     color: var(--highlight);
     transition: 0.15s all ease-in-out;
 }
-#hamburger {
-    display: block;
-    visibility: hidden;
-    opacity: 0.0;
-}
+#hamburger,
 #menu .close {
+    display: none !important;
     visibility: hidden;
-    background-color: transparent;
 }
 .centerblock {
     display: block; 
@@ -203,6 +200,7 @@ body:has(*[id*='-show']:target) #bg {
     transition: 0.3s all ease-in-out;
     z-index: 100;
 }
+/* BACKGROUND IMAGE BEHIND TEXT CONTENT
 #about-show:before {
     background-image: url(../img/hatch.png);
 }
@@ -234,7 +232,8 @@ body:has(*[id*='-show']:target) #bg {
     width: 120vw;
     height: 100%;
     opacity: 0.1;
-}
+} 
+*/
 p {
     padding: 0;
     padding-bottom: 0.1rem; /* hack, a{border} not rendering properly */
@@ -331,7 +330,7 @@ s {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.9rem;
-    line-height: 1.0em;
+    line-height: 1.0rem;
     padding: 0.5rem 0.25rem 0.2rem 0rem;
     margin-top: -0.5rem;
     margin-bottom: 0rem;
@@ -521,32 +520,37 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     .header {
         width: 100vw;
     }
-    #menu a {
+    #hamburger {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1.0;
+    }
+    #menu a,
+    #menu a:active,
+    #menu a:hover {
         display: block;
         background-color: rgba(0, 0, 0, 0.75);
     }
-    #hamburger {
-        display: block;
-        visibility: visible;
-        opacity: 1.0;
-    }
     #menu {
         display: block;
+        visibility: visible;
         position: fixed;
-        top: -15.5rem;
+        top: calc(-15.0rem - 1px); /* 1px iOS render glitch */
         right: 0;
         width: 100vw;
         transition: 0.3s all ease-in-out;
     }
     #menu:target {
-        top: 0rem;
+        top: 0.0rem;
     }
     #menu:target #hamburger {
         visibility: hidden;
         opacity: 0.0;
     }
     #menu .close {
-        visibility: visible;
+        display: block !important;
+        visibility: visible !important;
+        background-color: transparent !important;
     }
     *[id*='-show'] .close {
         visibility: hidden;
