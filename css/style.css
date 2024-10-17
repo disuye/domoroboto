@@ -56,11 +56,7 @@ body {
     -o-animation: var(--fade);
     -ms-animation: var(--fade);
 }
-#about-show, 
-#news-show, 
-#shop-show,
-#contact-show,
-#services-show,
+*[id*='-show'],
 .show-text {
     min-width: 270px !important;
     min-height: 4.0rem;  
@@ -169,11 +165,7 @@ body:has(*[id*='-show']:target) #bg {
     word-spacing: -0.08rem;
     text-align: center;
 }
-#about-show, 
-#shop-show,
-#news-show, 
-#contact-show,
-#services-show {
+*[id*='-show'] {
     display: block;
     visibility: hidden;
     opacity: 0.0;
@@ -193,11 +185,7 @@ body:has(*[id*='-show']:target) #bg {
     overflow-x: hidden;
     box-shadow: 0px 1vh 10vh 0px rgba(0,0,0,0.80);
 }    
-#about-show:target, 
-#shop-show:target,
-#news-show:target, 
-#contact-show:target,
-#services-show:target {
+*[id*='-show']:target {
     visibility: visible;
     opacity: 1.0;
     transition: 0.3s all ease-in-out;
@@ -219,11 +207,7 @@ body:has(*[id*='-show']:target) #bg {
 #services-show::before {
     background-image: url(../img/hatch.png);
 }
-#about-show::before,
-#shop-show::before,
-#news-show::before,
-#contact-show::before,
-#services-show::before {
+*[id*='-show']::before {
     content: "";
     display: block;
     position: fixed;
@@ -513,10 +497,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         background-size: 45%;
         transition: 0.2s all ease-in-out;
     }
-    #about-show, 
-    #shop-show,
-    #news-show, 
-    #contact-show {
+    *[id*='-show'] {
         min-height: 200px;
     }
     h1 {
