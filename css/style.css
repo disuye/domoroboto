@@ -340,7 +340,7 @@ s {
     padding: 0; margin: 0;
     padding-top: 1.0rem;
 }
-#show-bg {
+.show-bg {
     display: block;
     position: relative;
     top:-2.0rem; left:-2.0rem;
@@ -354,22 +354,22 @@ s {
     background-repeat: no-repeat;
     background-color: black;
 }
-#about-show #show-bg {
+#about-show .show-bg {
     background-image: url(../img/hatch.jpg);
 }
-#news-show #show-bg {
+#news-show .show-bg {
     background-image: url(../img/hatch.jpg);
 }
-#contact-show #show-bg {
+#contact-show .show-bg {
     background-image: url(../img/hatch.jpg);
 }   
-#shop-show #show-bg {
+#shop-show .show-bg {
     background-image: url(../img/hatch.jpg);
 }
-#services-show #show-bg {
+#services-show .show-bg {
     background-image: url(../img/hatch.jpg);
 }
-#show-bg::after {
+.show-bg::after {
     content: "";
     padding: 0; margin :0;
     background: url(../img/logos/domoroboto.png) no-repeat;
@@ -378,7 +378,7 @@ s {
     -o-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
     -ms-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
     filter: drop-shadow(0 -0.06rem 0.5rem rgba(0,0,0,1.0));
-    background-size: calc(25% - 4.0rem);
+    background-size: 300px;
     background-position: center;
     background-color: rgba(0,128,128,0.06);
     height: 100%;
@@ -490,10 +490,10 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     h3 {
         font-size: 2.0rem;
     }
-    #show-bg {
+    .show-bg {
         min-height: calc(10rem);
     }
-    #show-bg::after {
+    .show-bg::after {
         background-size: 45%;
         transition: 0.2s all ease-in-out;
     }
