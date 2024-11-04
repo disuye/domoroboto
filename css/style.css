@@ -1,4 +1,4 @@
-/* DomoRoboto */
+/* ᴅᴏᴍᴏʀᴏʙᴏᴛᴏ.net */
 
 :root {
     --highlight: rgba(176,253,217,1.0);
@@ -11,26 +11,31 @@
     --font-three: "D-Din", "Noto Sans JP", sans-serif;
     --font-four: "Liberal", "Noto Sans JP", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
-    --fade: fadeIn 3.0s;
+    --fade: fadeIn 5.0s;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}
+    70% {opacity: 0;}
     100% {opacity: 1;}
 }
 @-moz-keyframes fadeIn {
     0% {opacity: 0;}
+    70% {opacity: 0;}
     100% {opacity: 1;}
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
+    70% {opacity: 0;}
     100% {opacity: 1;}
 }
 @-o-keyframes fadeIn {
     0% {opacity: 0;}
+    70% {opacity: 0;}
     100% {opacity: 1;}
 }
 @-ms-keyframes fadeIn {
     0% {opacity: 0;}
+    70% {opacity: 0;}
     100% {opacity: 1;}
 }
 body {
