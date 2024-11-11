@@ -18,7 +18,7 @@
 <!-- HEADER / LINK MENU -->
 <div class="header" class=“notranslate” translate="no">
 	<div id="menu">
-	<a href="#about-show">About<br>我々について</a><a href="#services-show">Services<br>サービス</a><a href="#news-show">News<br>ニュース</a><a href="#contact-show">Contact<br>連絡先</a><a href="#shop-show">Shop<br>ショップ</a><a id="hamburger" href="#menu">MENU メニュー</a><a class="close" href="#"></a>
+	<a href="#about-show" onClick="anchorFunction('about-top')">About<br>我々について</a><a href="#services-show" onClick="anchorFunction('services-top')">Services<br>サービス</a><a href="#news-show" onClick="anchorFunction('news-top')">News<br>ニュース</a><a href="#contact-show" onClick="anchorFunction('contact-top')">Contact<br>連絡先</a><a href="#shop-show" onClick="anchorFunction('shop-top')">Shop<br>ショップ</a><a id="hamburger" href="#menu">MENU メニュー</a><a class="close" href="#"></a>
 	</div>
 </div>
 
@@ -31,7 +31,7 @@
 <!-- ABOUT CONTENT -->
 <div id="about-show">
 	<a class="close" href="#"></a>
-	<div  id="about-top" class="show-bg"></div>
+	<div id="about-top" class="show-bg"></div>
 	<h1 class=“notranslate” translate="no">About<br>我々について</h1>
 	<div class="show-text">
 		<p>Everybody needs a little help sometimes.</p>
@@ -41,7 +41,7 @@
 <!-- SERVICES CONTENT -->
 <div id="services-show">
 	<a class="close" href="#"></a>
-	<div  id="services-top" class="show-bg"></div>			
+	<div id="services-top" class="show-bg"></div>			
 	<h1 class=“notranslate” translate="no">Services<br>サービス</h1>
 	<div class="show-text">
 		<p>Something for everyone.</p>
@@ -51,7 +51,7 @@
 <!-- NEWS CONTENT -->
 <div id="news-show">
 	<a class="close" href="#"></a>
-	<div  id="news-top" class="show-bg"></div>			
+	<div id="news-top" class="show-bg"></div>			
 	<h1 class=“notranslate” translate="no">News<br>ニュース</h1>
 	<div class="show-text">
 		<p>No news today.</p>
@@ -61,7 +61,7 @@
 <!-- CONTACT CONTENT -->
 <div id="contact-show">
 	<a class="close" href="#"></a>
-	<div  id="contact-top" class="show-bg"></div>
+	<div id="contact-top" class="show-bg"></div>
 	<h1 class=“notranslate” translate="no">Contact<br>連絡先</h1>
 		<div class="show-text">
 			<p>Do not disturb.</p>
@@ -71,7 +71,7 @@
 <!-- SHOP CONTENT -->
 <div id="shop-show">
 	<a class="close" href="#"></a>
-	<div  id="shop-top" class="show-bg"></div>
+	<div id="shop-top" class="show-bg"></div>
 	<h1 class=“notranslate” translate="no">Shop<br>ショップ</h1>
 	<div class="show-text">
 		<p>Check back soon, the shop should be operational in the next few weeks.</p>
@@ -106,6 +106,26 @@
 
 <!-- FOOTER -->
 		<div class="footer">©2000-2024 ᴅᴏᴍᴏʀᴏʙᴏᴛᴏ.net</div>
-	
+
+<!-- SCRIPTS -->
+<script>
+	// Sub-Anchor Navigation, smooth scroll except Safari
+	function anchorFunction(goHere) {
+		if ((typeof navigator.vendor!='undefined') &&
+		navigator.vendor.toLowerCase().indexOf('apple')!=-1) {
+			document.getElementById(goHere).scrollIntoView();
+		} else {
+			document.getElementById(goHere).scrollIntoView({behavior: 'smooth'});
+		}
+	}
+</script>
+<script>
+	// Copy Email, Link to Clipboard
+	function copyFunction(copyText) {
+		navigator.clipboard.writeText(copyText);
+		alert("Copied to clipboard:" + `\n\n` + copyText);
+	}
+</script>		
+
 	</body>
 </html>

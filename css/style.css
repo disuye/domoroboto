@@ -1,7 +1,8 @@
 /* ᴅᴏᴍᴏʀᴏʙᴏᴛᴏ.net */
 
 :root {
-    --highlight: rgba(176,253,217,1.0);
+/*    --highlight: rgba(176,253,217,1.0); */
+    --highlight: rgba(255,78,8,1.0);    
     --base:rgba(78,83,88,1.0);
     --primary:rgba(0,0,0,1.0);
     --secondary:rgba(255,255,255,1.0);
@@ -11,7 +12,7 @@
     --font-three: "D-Din", "Noto Sans JP", sans-serif;
     --font-four: "Liberal", "Noto Sans JP", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
-    --fade: fadeIn 4.0s;
+    --fade: fadeIn 3.0s;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -139,8 +140,9 @@ body:has(*[id*='-show']:target) #bg {
     color: var(--highlight);
     transition: 0.15s all ease-in-out;
 }
-#hamburger,
-#menu .close {
+/* #menu .close, */
+*[id*='-show'] .close,
+#hamburger {
     display: none !important;
     visibility: hidden;
 }
@@ -366,19 +368,19 @@ _:future,
     background-color: black;
 }
 #about-show .show-bg {
-    background-image: url(../img/hatch.jpg);
+    background-image: url(../img/hatch.png);
 }
 #news-show .show-bg {
-    background-image: url(../img/hatch.jpg);
+    background-image: url(../img/hatch.png);
 }
 #contact-show .show-bg {
-    background-image: url(../img/hatch.jpg);
+    background-image: url(../img/hatch.png);
 }   
 #shop-show .show-bg {
-    background-image: url(../img/hatch.jpg);
+    background-image: url(../img/hatch.png);
 }
 #services-show .show-bg {
-    background-image: url(../img/hatch.jpg);
+    background-image: url(../img/hatch.png);
 }
 .show-bg::after {
     content: "";
