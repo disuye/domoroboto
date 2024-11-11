@@ -434,11 +434,11 @@ h3, h1 {
     transition: 0.2s all ease-in-out;
     text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
     color: var(--base);
-    -moz-transform: rotateZ(-7deg) skew(-12deg, 0deg);
+/*    -moz-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -webkit-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -o-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -ms-transform: rotateZ(-7deg) skew(-12deg, 0deg);
-    transform: rotateZ(-7deg) skew(-12deg, 0deg);
+    transform: rotateZ(-7deg) skew(-12deg, 0deg); */
 }
 h1 {
     transform-origin: center;
